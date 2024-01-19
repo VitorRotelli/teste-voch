@@ -1,0 +1,132 @@
+/* Sessão que puxa fontes externas e internas */
+@font-face {
+    font-family: 'AileronR';
+    src: url('fonts/Aileron-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'AileronB';
+    src: url('fonts/Aileron-Heavy.otf') format('opentype');
+}
+
+body {
+    background-image: linear-gradient(to right top, #ffd300, #ffc700, #febb03, #fcb00a, #f9a411);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Começo menu */
+
+.quadrado {
+    width: 30vw;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.quadrado h1 {
+    font-family: 'AileronB', sans-serif;
+    color: black;
+    font-size: calc(1.6em + 1.6vw);
+    text-align: center;
+}
+
+.botoes_menu{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+
+.botoes_menu button{
+    font-family: 'AileronR', sans-serif;
+    width: 15vw;
+    height: 7vh;
+    background-color: #f9a411;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    font-size: calc(0.5em + 0.5vw);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.botoes_menu button:hover{
+    letter-spacing: 2px;
+    width: 19vw;
+}
+
+/* Final menu */
+
+/* Começo cadastro unidades */
+
+.inputs-unidades{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.inputs-unidades input{
+    width: 10vw;
+    height: 5vh;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(226, 226, 226);
+    transition: 0.3s;
+    padding: 0px 16px 0px;
+}
+
+.inputs-unidades input:focus{
+    outline: #f9a411;
+    width: 12vw;
+}
+
+.inputs-unidades button{
+    font-family: 'AileronR', sans-serif;
+    width: 6vw;
+    height: 4vh;
+    background-color: #f9a411;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    font-size: calc(0.45em + 0.45vw);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.inputs-unidades button:hover{
+    letter-spacing: 2px;
+    width: 8vw;
+}
+
+.inputs-unidades a{
+    font-family: 'AileronR', sans-serif;
+    text-decoration: none;
+    color: #f9a411;
+    transition: 0.3s;
+}
+
+.inputs-unidades a:hover{
+    letter-spacing: 3px;
+}
+
+/* Final cadastro unidades */
+
+/* Começo desempenho */
+.inputs-unidades select{
+    width: 10vw;
+    height: 5vh;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(226, 226, 226);
+    transition: 0.3s;
+    padding: 0px 16px 0px;
+}
+
+.inputs-unidades select:focus{
+    outline: #f9a411;
+    width: 12vw;
+}
+/* Final desempenho */
