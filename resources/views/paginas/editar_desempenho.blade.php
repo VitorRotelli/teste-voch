@@ -15,7 +15,11 @@
         <form action="{{ route('atualizar_desempenho') }}" method="POST">
             @csrf
             <div class="inputs-unidades">
+                <input type="text" id="filtroColaborador" placeholder="Digite para filtrar">
+            </div>
+            <div class="inputs-unidades">
                 <select name="colaborador_id" id="colaborador_id">
+                    <option value="">Escolha...</option>
                     @foreach($colaboradores as $id)
                     <option value="{{ $id }}">{{ $id }}</option>
                     @endforeach
@@ -34,11 +38,33 @@
                 <button type="submit">Enviar</button>
             </div>
             <div class="inputs-unidades">
-            <a href="javascript:history.back()">Voltar</a>
+                <a href="javascript:history.back()">Voltar</a>
             </div>
         </form>
     </div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('#filtroColaborador').on('input', function() {
+                filtrarOpcoes();
+            });
 
+            function filtrarOpcoes() {
+                var filtro = $('#filtroColaborador').val().toUpperCase();
+                var select = $('#colaborador_id');
+
+                $('option', select).each(function() {
+                    var opcaoTexto = $(this).text().toUpperCase();
+                    if (opcaoTexto.indexOf(filtro) > -1) {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

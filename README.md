@@ -34,8 +34,10 @@ php artisan db:seed --class=Cargo_ColaboradoresTableSeeder
 ```
 
 
-## Observação 🛈
+## Observações 🛈
 
-Como esta é uma aplicação com o propósito de teste, não me preocupei em utilizar ferramentas que contribuem para a responsividade da plataforma, como o Bootstrap. Portanto, o site pode apresentar inconsistências em seu layout quando visualizado em plataformas móveis ou em monitores ultrawide.
+**1°** Como esta é uma aplicação com o propósito de teste, não me preocupei em utilizar ferramentas que contribuem para a responsividade da plataforma, como o Bootstrap. Portanto, o site pode apresentar inconsistências em seu layout quando visualizado em plataformas móveis ou em monitores ultrawide.
+
+**2°** Na pasta "Dumps" há um arquivo .sql com toda a estrutura das tabelas que utilizei, podendo executar as querys para criação das tables e etc.
 
 
