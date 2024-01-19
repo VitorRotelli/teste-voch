@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('nome');
             $table->string('cpf');
             $table->string('mail');
+            $table->timestamps();
         });
     }
 

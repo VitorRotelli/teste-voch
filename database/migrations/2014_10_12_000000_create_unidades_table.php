@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('nome_fantasia');
             $table->string('razao_social');
             $table->string('cnpj');
-            $table->rememberToken();
             $table->timestamps();
         });
     }

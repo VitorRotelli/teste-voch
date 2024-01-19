@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('cargo_id');
             $table->string('colaborador_id');
             $table->string('nota_desempenho');
+            $table->timestamps();
         });
     }
 
