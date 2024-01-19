@@ -17,10 +17,19 @@
             <div class="inputs-unidades">
                 <select name="id_unidade" id="id_unidade">
                     @foreach($unidades as $id => $nome_fantasia)
-                    <option value="{{ $id }}">{{ $nome_fantasia }}, {{ $id }}</option>
+                    <option value="{{ $nome_fantasia }}">{{ $nome_fantasia }}, {{ $id }}</option>
                     @endforeach
                 </select>
             </div>
+            <div class="inputs-unidades">
+                <select name="cargo_id" id="cargo_id">
+                    @foreach($cargos as $id => $cargo)
+                    <option value="{{ $cargo }}">{{ $cargo }}, {{ $id }}</option>
+                    @endforeach
+                </select>
+            </div>
+            <input type="hidden" name="colaborador_id" id="colaborador_id" value="teste">
+            <input type="hidden" name="nota_desempenho" id="nota_desempenho" value="N/A">
             <div class="inputs-unidades">
                 <input type="text" name="nome" id="nome" placeholder="Nome" required>
             </div>
@@ -33,15 +42,11 @@
             <div class="inputs-unidades">
                 <button type="submit">Cadastrar</button>
             </div>
+            <div class="inputs-unidades">
+                <a href="javascript:history.back()">Voltar</a>
+            </div>
         </form>
     </div>
 </body>
 
 </html>
-<!-- <div class="inputs-unidades">
-    <select name="" id="id_cargo">
-        @foreach($cargos as $id => $cargo)
-        <option value="{{ $id }}">{{ $cargo }}, {{ $id }}</option>
-        @endforeach
-    </select>
-</div> -->

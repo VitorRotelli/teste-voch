@@ -12,4 +12,9 @@ class Colaboradores extends Model
     protected $table = 'colaboradores';
 
     protected $fillable = ['id_unidade', 'nome', 'cpf', 'mail'];
+
+    public function unidade()
+    {
+        return $this->belongsTo(Produto::class, 'id_unidade', 'id');
+    }
 }

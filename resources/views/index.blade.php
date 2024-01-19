@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="shortcut icon" href="https://vochtech.com.br/img/icon-voch.svg" type="image" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -18,6 +19,9 @@
         </div>
         <div class="botoes_menu">
             <button onclick="window.location.href = '/editar_desempenho'">Desempenho Colaboradores</button>
+        </div>
+        <div class="botoes_menu">
+            <button onclick="window.location.href = '/relatorios'">Relatórios</button>
         </div>
     </div>
 </body>

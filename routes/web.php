@@ -23,5 +23,9 @@ Route::get('/cadastro_colaborador', [IndexController::class, 'colaborador_cadast
 Route::post('/cadastrar_colaboradores_back', [IndexController::class, 'cadastro_colaborador'])->name('colaboradores_cadastro.store');
 Route::get('/editar_desempenho', [IndexController::class, 'edit'])->name('editar_desempenho');
 Route::post('/atualizar_desempenho', [IndexController::class, 'updateDesempenho'])->name('atualizar_desempenho');
+Route::get('/relatorios', [IndexController::class, 'relatorios_csv']);
+Route::get('/relatorios_colaboradores', [IndexController::class, 'relatorios_csv_colaboradores']);
+Route::get('/relatorios_unidades', [IndexController::class, 'relatorios_csv_unidades']);
+Route::get('/relatorios_ranking', [IndexController::class, 'relatorios_csv_ranking']);
 
 

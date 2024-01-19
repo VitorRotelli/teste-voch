@@ -13,6 +13,7 @@
     <div class="quadrado">
         <h1>Cadastrar unidades</h1>
         <form action="{{ route('unidades.store')}}" method="POST">
+        @csrf
             <div class="inputs-unidades">
                 <input type="text" name="nome_fantasia" id="nome_fantasia" placeholder="Nome fantasia" required>
             </div>

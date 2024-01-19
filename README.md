@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://vochtech.com.br/img/icon-voch.svg" width="150" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://vochtech.com.br/img/icon-voch.svg" width="150" alt="Voch logo"></a></p>
 
 
 # Técnologias usadas
@@ -16,9 +16,10 @@
 - **[Laravel](https://laravel.com/):** Usado para ajudar na parte do servidor! Agilizando a popular tabelas, fazer inserções e atualizações no banco de dados e outros.
 - **[Lottie Web](https://github.com/airbnb/lottie-web):** Responsável por carregar as animações em JSON.
 - **[Faker](https://github.com/fzaninotto/Faker):** Usado para gerar dados fictícios, esses que foram usados para preencher as tabelas.
+- **[Font Awesome](https://fontawesome.com/):** Biblioteca usada para exibição de icones.
 
-## Observações
+## Observação
 
-**1°** Como esta é uma aplicação com o propósito de teste, não me preocupei em utilizar ferramentas que contribuem para a responsividade da plataforma, como o Bootstrap. Portanto, o site pode apresentar inconsistências em seu layout quando visualizado em plataformas móveis ou em monitores ultrawide.
+Como esta é uma aplicação com o propósito de teste, não me preocupei em utilizar ferramentas que contribuem para a responsividade da plataforma, como o Bootstrap. Portanto, o site pode apresentar inconsistências em seu layout quando visualizado em plataformas móveis ou em monitores ultrawide.
 
 
